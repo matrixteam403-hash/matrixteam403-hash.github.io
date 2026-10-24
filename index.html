@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090c12">
+  <meta name="description" content="صفحه رسمی لینک‌ها و شبکه‌های اجتماعی Matrix Team">
+  <meta property="og:title" content="Matrix Team | لینک‌های رسمی">
+  <meta property="og:description" content="همه مسیرهای Matrix Team، یک‌جا.">
+  <title>Matrix Team | لینک‌های رسمی</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23090c12'/%3E%3Cpath d='M15 47V17h7l10 15 10-15h7v30h-8V30L32 43 23 30v17z' fill='%23a8ff78'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #090c12;
+      --panel: rgba(17, 22, 31, .82);
+      --panel-strong: #121923;
+      --text: #f4f7f2;
+      --muted: #9ba6b2;
+      --line: rgba(229, 240, 255, .10);
+      --lime: #a8ff78;
+      --cyan: #78e7e2;
+      --purple: #b7a1ff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse at 84% 12%, rgba(93, 167, 105, .15), transparent 31rem),
+        radial-gradient(ellipse at 8% 78%, rgba(105, 91, 186, .14), transparent 34rem),
+        var(--bg);
+      font-family: Tahoma, Arial, "Noto Sans Arabic", sans-serif;
+      line-height: 1.75;
+    }
+    body::before {
+      position: fixed;
+      z-index: -1;
+      inset: 0;
+      content: "";
+      pointer-events: none;
+      background-image: linear-gradient(rgba(255,255,255,.022) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.022) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,.72), transparent 88%);
+    }
+    a { color: inherit; }
+    .page { width: min(1080px, calc(100% - 40px)); margin: 0 auto; padding: 25px 0 26px; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 30px; }
+    .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand-mark {
+      display: grid; width: 43px; height: 43px; place-items: center; border-radius: 14px;
+      color: var(--lime); background: linear-gradient(145deg, rgba(168,255,120,.17), rgba(168,255,120,.045));
+      border: 1px solid rgba(168,255,120,.25); font-size: 20px; font-weight: 900; letter-spacing: -2px;
+      box-shadow: 0 0 30px rgba(168,255,120,.08);
+    }
+    .brand-name { display: block; font-size: 15px; font-weight: 800; line-height: 1.3; letter-spacing: .3px; }
+    .brand-caption { display: block; margin-top: 4px; color: var(--muted); font-size: 10px; letter-spacing: 1.7px; direction: ltr; text-align: right; }
+    .official-badge { display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px; color: #c1c9d1; background: rgba(255,255,255,.025); font-size: 11px; }
+    .badge-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 12px var(--lime); }
+    .hero {
+      position: relative; isolation: isolate; display: grid; grid-template-columns: 1.14fr .86fr; align-items: center;
+      min-height: 365px; padding: clamp(28px, 6vw, 66px); overflow: hidden;
+      border: 1px solid rgba(216,235,255,.12); border-radius: 30px;
+      background: linear-gradient(118deg, rgba(19,27,36,.91), rgba(13,18,27,.90) 63%, rgba(24,32,34,.87));
+      box-shadow: 0 28px 90px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.035);
+    }
+    .hero::before { position: absolute; z-index: -1; content: ""; width: 390px; height: 390px; border-radius: 50%; left: -130px; top: -235px; background: rgba(168,255,120,.08); filter: blur(20px); }
+    .hero::after { position: absolute; z-index: -1; content: ""; width: 340px; height: 340px; border-radius: 50%; left: 27%; bottom: -270px; background: rgba(122,116,255,.11); filter: blur(18px); }
+    .hero-copy { position: relative; z-index: 2; max-width: 590px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 9px; margin: 0 0 17px; color: var(--lime); font-size: 12px; font-weight: 700; letter-spacing: .4px; }
+    .eyebrow::before { content: ""; width: 23px; height: 1px; background: var(--lime); box-shadow: 0 0 10px var(--lime); }
+    h1 { margin: 0; max-width: 620px; font-size: clamp(34px, 5.4vw, 60px); line-height: 1.22; letter-spacing: -1.7px; font-weight: 900; }
+    h1 span { color: var(--lime); white-space: nowrap; text-shadow: 0 0 35px rgba(168,255,120,.16); }
+    .hero-text { max-width: 475px; margin: 19px 0 27px; color: #aeb8c4; font-size: 15px; line-height: 2; }
+    .primary-link { display: inline-flex; align-items: center; gap: 12px; min-height: 49px; padding: 0 20px; border: 1px solid rgba(168,255,120,.42); border-radius: 14px; color: #10180d; background: var(--lime); text-decoration: none; font-size: 13px; font-weight: 800; transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
+    .primary-link:hover { transform: translateY(-3px); background: #baff95; box-shadow: 0 10px 32px rgba(168,255,120,.2); }
+    .primary-link svg { width: 17px; height: 17px; }
+    .hero-art { position: relative; display: grid; min-height: 260px; place-items: center; }
+    .orbit { position: absolute; width: min(280px, 75vw); aspect-ratio: 1; border: 1px solid rgba(168,255,120,.16); border-radius: 50%; transform: rotate(-25deg) scaleY(.65); }
+    .orbit::before, .orbit::after { position: absolute; content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 18px var(--lime); }
+    .orbit::before { top: 18%; right: 16%; }
+    .orbit::after { bottom: 21%; left: 12%; width: 5px; height: 5px; background: var(--cyan); box-shadow: 0 0 15px var(--cyan); }
+    .orbit.orbit-two { width: 220px; border-color: rgba(183,161,255,.18); transform: rotate(56deg) scaleY(.72); }
+    .orbit.orbit-two::before { top: 75%; right: 1%; width: 5px; height: 5px; background: var(--purple); box-shadow: 0 0 15px var(--purple); }
+    .emblem { position: relative; display: grid; width: 144px; height: 144px; place-items: center; border: 1px solid rgba(168,255,120,.35); border-radius: 39px; color: var(--lime); background: linear-gradient(145deg, rgba(168,255,120,.16), rgba(14,20,25,.92) 68%); box-shadow: 0 0 60px rgba(168,255,120,.12), inset 0 1px 0 rgba(255,255,255,.15); transform: rotate(-8deg); }
+    .emblem::before { position: absolute; inset: 9px; border: 1px solid rgba(255,255,255,.08); border-radius: 31px; content: ""; }
+    .emblem span { font-size: 58px; font-weight: 900; line-height: 1; letter-spacing: -7px; transform: rotate(8deg) translateX(3px); text-shadow: 0 0 30px rgba(168,255,120,.25); }
+    .art-label { position: absolute; bottom: 18px; left: 4px; color: rgba(223,233,223,.55); font-size: 9px; letter-spacing: 3px; direction: ltr; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin: 48px 2px 19px; }
+    .section-title { margin: 0; font-size: 21px; font-weight: 800; letter-spacing: -.4px; }
+    .section-caption { margin: 5px 0 0; color: var(--muted); font-size: 12px; }
+    .section-index { color: rgba(168,255,120,.68); font-size: 11px; letter-spacing: 2px; direction: ltr; }
+    .social-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+    .social-card {
+      --accent: var(--lime); position: relative; display: flex; min-height: 170px; flex-direction: column; justify-content: space-between;
+      padding: 21px; overflow: hidden; border: 1px solid var(--line); border-radius: 21px; color: var(--text); background: var(--panel);
+      text-decoration: none; box-shadow: 0 13px 35px rgba(0,0,0,.12); transition: transform .22s ease, border-color .22s ease, background .22s ease;
+    }
+    .social-card::after { position: absolute; right: -42px; bottom: -68px; width: 150px; height: 150px; border-radius: 50%; content: ""; background: var(--accent); opacity: .055; filter: blur(10px); transition: opacity .22s ease, transform .22s ease; }
+    .social-card:hover { transform: translateY(-5px); border-color: color-mix(in srgb, var(--accent) 42%, transparent); background: rgba(21,28,38,.96); }
+    .social-card:hover::after { opacity: .12; transform: scale(1.2); }
+    .youtube { --accent: #ff7474; }
+    .instagram { --accent: #e99aff; }
+    .telegram { --accent: #78caff; }
+    .card-top, .card-bottom { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .social-icon { display: grid; width: 46px; height: 46px; place-items: center; border: 1px solid color-mix(in srgb, var(--accent) 28%, transparent); border-radius: 15px; color: var(--accent); background: color-mix(in srgb, var(--accent) 9%, transparent); }
+    .social-icon svg { width: 23px; height: 23px; }
+    .arrow { display: grid; width: 31px; height: 31px; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: #b8c2cc; transition: transform .2s ease, color .2s ease; }
+    .arrow svg { width: 14px; height: 14px; }
+    .social-card:hover .arrow { color: var(--accent); transform: translate(-2px, -2px); }
+    .platform-name { display: block; font-size: 17px; font-weight: 800; }
+    .platform-handle { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; direction: ltr; text-align: right; }
+    .note { display: flex; align-items: center; gap: 14px; margin-top: 18px; padding: 15px 18px; border: 1px solid rgba(168,255,120,.12); border-radius: 16px; background: rgba(168,255,120,.035); color: #aeb8b4; font-size: 12px; }
+    .note-mark { display: grid; flex: 0 0 29px; height: 29px; place-items: center; border-radius: 10px; color: var(--lime); background: rgba(168,255,120,.1); font-size: 15px; font-weight: 800; }
+    .note p { margin: 0; }
+    footer { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-top: 39px; padding: 19px 2px 0; border-top: 1px solid rgba(255,255,255,.075); color: #7f8b96; font-size: 10px; }
+    .footer-brand { color: #c2c9cd; font-weight: 700; }
+    .footer-tag { direction: ltr; letter-spacing: 1px; }
+    @media (max-width: 760px) {
+      .page { width: min(100% - 28px, 600px); padding-top: 17px; }
+      .topbar { margin-bottom: 20px; }
+      .hero { grid-template-columns: 1fr; min-height: initial; padding: 35px 27px 22px; border-radius: 25px; }
+      .hero-copy { max-width: none; }
+      .hero-art { min-height: 215px; margin-top: 6px; }
+      .orbit { width: 225px; }
+      .orbit.orbit-two { width: 180px; }
+      .emblem { width: 116px; height: 116px; border-radius: 33px; }
+      .emblem::before { border-radius: 25px; }
+      .emblem span { font-size: 49px; }
+      .art-label { bottom: 4px; left: 0; }
+      .section-head { margin-top: 36px; }
+      .social-grid { grid-template-columns: 1fr; gap: 10px; }
+      .social-card { min-height: 128px; padding: 17px 18px; }
+      footer { margin-top: 29px; }
+    }
+    @media (max-width: 390px) {
+      .official-badge { padding: 6px 9px; font-size: 10px; }
+      .brand-mark { width: 39px; height: 39px; }
+      h1 { font-size: 33px; }
+      .hero { padding-right: 21px; padding-left: 21px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Matrix Team، صفحه اصلی">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>
+          <span class="brand-name">Matrix Team</span>
+          <span class="brand-caption">OFFICIAL LINKS</span>
+        </span>
+      </a>
+      <span class="official-badge"><span class="badge-dot" aria-hidden="true"></span> صفحه‌ی رسمی لینک‌ها</span>
+    </header>
+
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">به دنیای ما خوش اومدی</p>
+        <h1 id="hero-title">همه‌ی مسیرهای<br><span>Matrix Team</span>، یک‌جا.</h1>
+        <p class="hero-text">برای دنبال‌کردن ما، دیدن صفحه‌ها و پیدا کردن کانال‌های رسمی، از لینک‌های زیر استفاده کن.</p>
+        <a class="primary-link" href="https://youtube.com/@matrixteam-403" target="_blank" rel="noopener noreferrer">
+          رفتن به کانال یوتیوب
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="emblem"><span>M</span></div>
+        <span class="art-label">MATRIX · CONNECTED</span>
+      </div>
+    </section>
+
+    <section aria-labelledby="social-title">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title" id="social-title">از اینجا پیدامون کن</h2>
+          <p class="section-caption">کانال‌ها و شبکه‌های اجتماعی Matrix Team</p>
+        </div>
+        <span class="section-index">01 / CONNECT</span>
+      </div>
+
+      <div class="social-grid">
+        <a class="social-card youtube" href="https://youtube.com/@matrixteam-403" target="_blank" rel="noopener noreferrer" aria-label="باز کردن کانال Matrix Team در یوتیوب">
+          <span class="card-top">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg>
+            </span>
+            <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </span>
+          <span class="card-bottom"><span><span class="platform-name">YouTube</span><span class="platform-handle">@matrixteam-403</span></span></span>
+        </a>
+
+        <a class="social-card instagram" href="https://www.instagram.com/matrixteam403/" target="_blank" rel="noopener noreferrer" aria-label="باز کردن صفحه Matrix Team در اینستاگرام">
+          <span class="card-top">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+            </span>
+            <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </span>
+          <span class="card-bottom"><span><span class="platform-name">Instagram</span><span class="platform-handle">@matrixteam403</span></span></span>
+        </a>
+
+        <a class="social-card telegram" href="https://t.me/matrixteam403" target="_blank" rel="noopener noreferrer" aria-label="باز کردن کانال Matrix Team در تلگرام">
+          <span class="card-top">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.7 3.4a1.5 1.5 0 0 0-1.6-.2L2.4 10.1c-1.1.4-1.1 1.9.1 2.3l4.5 1.4 1.7 5.1c.4 1.1 1.8 1.3 2.4.3l2.5-3.5 4.6 3.4c.9.7 2.2.2 2.4-.9l2.7-13.2a1.5 1.5 0 0 0-.6-1.6ZM9 13.4l8.8-5.5-6.9 7.1-.3 3.1L9 13.4Z"/></svg>
+            </span>
+            <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </span>
+          <span class="card-bottom"><span><span class="platform-name">Telegram</span><span class="platform-handle">@matrixteam403</span></span></span>
+        </a>
+      </div>
+    </section>
+
+    <aside class="note">
+      <span class="note-mark" aria-hidden="true">✦</span>
+      <p>این صفحه برای جمع‌کردن لینک‌های Matrix Team در یک جا ساخته شده. برای افزودن بخش یا لینک تازه، کافی است فایل <bdi>index.html</bdi> را ویرایش کنی.</p>
+    </aside>
+
+    <footer>
+      <span><span class="footer-brand">Matrix Team</span> · لینک‌های رسمی</span>
+      <span class="footer-tag">STAY CONNECTED · <span id="year">2026</span></span>
+    </footer>
+  </main>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
