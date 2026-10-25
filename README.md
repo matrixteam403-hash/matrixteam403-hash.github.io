@@ -8,6 +8,7 @@
 
 - [YouTube](https://youtube.com/@matrixteam-403)
 - [Instagram](https://www.instagram.com/matrixteam403/)
+- [X / Twitter](https://x.com/MatrixTeam403)
 - [Telegram](https://t.me/matrixteam403)
 - [ایمیل](mailto:matrixteam403@gmail.com)
 
