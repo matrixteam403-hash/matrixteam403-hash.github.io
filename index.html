@@ -93,7 +93,7 @@
     .section-title { margin: 0; font-size: 21px; font-weight: 800; letter-spacing: -.4px; }
     .section-caption { margin: 5px 0 0; color: var(--muted); font-size: 12px; }
     .section-index { color: rgba(168,255,120,.68); font-size: 11px; letter-spacing: 2px; direction: ltr; }
-    .social-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 14px; }
+    .social-grid { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 14px; }
     .social-card {
       --accent: var(--lime); position: relative; display: flex; min-height: 170px; flex-direction: column; justify-content: space-between;
       padding: 21px; overflow: hidden; border: 1px solid var(--line); border-radius: 21px; color: var(--text); background: var(--panel);
@@ -105,6 +105,7 @@
     .youtube { --accent: #ff7474; }
     .instagram { --accent: #e99aff; }
     .telegram { --accent: #78caff; }
+    .x { --accent: #e5edf2; }
     .email { --accent: #ffd27a; }
     .email .platform-handle { font-size: 10px; }
     .card-top, .card-bottom { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
@@ -218,6 +219,16 @@
             <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           </span>
           <span class="card-bottom"><span><span class="platform-name">Telegram</span><span class="platform-handle">@matrixteam403</span></span></span>
+        </a>
+
+        <a class="social-card x" href="https://x.com/MatrixTeam403" target="_blank" rel="noopener noreferrer" aria-label="باز کردن صفحه Matrix Team در X (توییتر)">
+          <span class="card-top">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2h3.1l-6.8 7.8L23.2 22H17l-4.9-6.5L6.4 22H3.3l7.3-8.4L2.8 2h6.4l4.4 5.9L18.9 2Zm-1.1 18h1.7L8.3 3.9H6.5L17.8 20Z"/></svg>
+            </span>
+            <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M7 7h10v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </span>
+          <span class="card-bottom"><span><span class="platform-name">X / Twitter</span><span class="platform-handle">@MatrixTeam403</span></span></span>
         </a>
 
         <a class="social-card email" href="mailto:matrixteam403@gmail.com" aria-label="ارسال ایمیل به Matrix Team">
