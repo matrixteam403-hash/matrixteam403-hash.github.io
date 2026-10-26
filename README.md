@@ -1,19 +1,21 @@
-# Matrix Team — لینک‌های رسمی
+# Matrix Team — Official Links / پیوندهای رسمی
 
-صفحه‌ی معرفی و دسترسی یک‌جای شبکه‌های اجتماعی Matrix Team.
+A bilingual Persian/English landing page for Matrix Team’s verified social channels and contact details. / صفحه‌ی دوزبانه‌ی فارسی و انگلیسی برای دسترسی به شبکه‌های اجتماعی و راه‌های ارتباط رسمی Matrix Team.
 
-🌐 **وب‌سایت:** https://matrixteam403-hash.github.io/
+**Website / وب‌سایت:** https://matrixteam403-hash.github.io/
 
-## شبکه‌های اجتماعی
+## Official channels / شبکه‌های رسمی
 
 - [YouTube](https://youtube.com/@matrixteam-403)
 - [Instagram](https://www.instagram.com/matrixteam403/)
 - [X / Twitter](https://x.com/MatrixTeam403)
 - [Telegram](https://t.me/matrixteam403)
-- [ایمیل](mailto:matrixteam403@gmail.com)
+- [Email / ایمیل](mailto:matrixteam403@gmail.com)
 
-## درباره‌ی سایت
+## About / درباره
 
-سایت با HTML، CSS و JavaScript ساده ساخته شده و برای اجرا به وابستگی یا فونت خارجی نیاز ندارد. فایل اصلی `index.html` است.
+Built with plain HTML, CSS and JavaScript; no external fonts or runtime libraries. Includes a Persian/English switch with a saved preference, responsive layout, keyboard skip link, social-sharing image, structured metadata, `robots.txt` and `sitemap.xml`.
 
-برای به‌روزرسانی متن‌ها یا اضافه‌کردن لینک‌ها، `index.html` را ویرایش کن. انتشار خودکار از طریق GitHub Actions روی شاخه‌ی `main` و GitHub Pages انجام می‌شود.
+سایت با HTML، CSS و JavaScript ساده ساخته شده و به فونت یا کتابخانه‌ی بیرونی وابستگی ندارد. انتخاب زبان فارسی/انگلیسی ذخیره می‌شود و صفحه برای موبایل، دسترس‌پذیری و اشتراک‌گذاری لینک بهینه شده است.
+
+To publish an update, commit the root files to the `main` branch; GitHub Pages serves the site from this repository. No access token belongs in the website source.
