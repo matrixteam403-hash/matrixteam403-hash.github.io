@@ -18,4 +18,4 @@ Built with plain HTML, CSS and JavaScript; no external fonts or runtime librarie
 
 سایت با HTML، CSS و JavaScript ساده ساخته شده و به فونت یا کتابخانه‌ی بیرونی وابستگی ندارد. انتخاب زبان فارسی/انگلیسی ذخیره می‌شود و صفحه برای موبایل، دسترس‌پذیری و اشتراک‌گذاری لینک بهینه شده است.
 
-To publish an update, commit the root files to the `main` branch; GitHub Pages serves the site from this repository. No access token belongs in the website source.
+To publish an update, commit the root files to the `main` branch; the pinned GitHub Actions workflow packages and deploys the static site. No access token belongs in the website source.
